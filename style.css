@@ -1,0 +1,129 @@
+body{
+background-color: #E0D9D3;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+
+}
+.container{
+    display: grid;
+    margin: 15px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "first fourth"
+                         "one    four"
+                         " third  fifth "
+                         " three   five "
+            
+    
+}
+.name{
+    display: flex;
+    color: #CD847F;
+
+}
+.name:hover{
+   font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+    color: palevioletred;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: 0px 0px 100px black;
+}
+img{
+    border-radius: 35px;
+}
+
+.first{
+grid-area: first;
+}
+.one{
+    height: 50px;
+    width: 50vw;
+    text-align: center;
+    display: none;
+    animation: slit-in-vertical 0.45s ease-out both;
+    grid-area: one;
+}
+.third{
+grid-area: third;
+}
+.three{
+    display: none;
+    text-align: center;
+    animation: slit-in-vertical 0.45s ease-out both;
+    grid-area: three;
+} 
+.fourth{
+    grid-area: fourth;
+}
+.four{
+    display: none;
+    text-align: center;
+    animation: slit-in-vertical 0.45s ease-out both;
+    grid-area: four;
+}
+.fifth{
+    grid-area: fifth;
+}
+.five{
+    display: none;
+    text-align: center;
+    animation: slit-in-vertical 0.45s ease-out both;
+    grid-area: five;
+} 
+@keyframes slit-in-vertical {
+    0% {
+      transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(0) rotateY(0);
+    }
+  }
+
+     button {
+        position: relative;
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-size: 3em;
+        font-size: 20px;
+        height: 61px;
+        background-color: #CFADAD;
+        font-family: 'Cormorant Upright', serif;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        display: block;
+        padding: 4px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 9px 0px #CD847F, 0px 9px 25px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0px 9px 0px #CD847F, 0px 9px 25px rgba(0, 0, 0, .7);
+        box-shadow: 0px 9px 0px #CD847F, 0px 9px 25px rgba(0, 0, 0, .7),;
+        margin:  auto;
+        width: 186px;
+        text-align: center;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+      }
+      button:active {
+        -webkit-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+        -moz-box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+        box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+        position: relative;
+        top: 6px;
+      }
+ 
